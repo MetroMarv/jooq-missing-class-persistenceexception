@@ -12,7 +12,7 @@
     <artifactId>jooq</artifactId>
 
     <properties>
-        <jooq.version>3.13.2</jooq.version>
+        <jooq.version>3.11.12</jooq.version>
     </properties>
 
     <dependencies>
