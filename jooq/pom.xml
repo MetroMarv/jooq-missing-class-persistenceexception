@@ -45,6 +45,12 @@
             <artifactId>jooq-meta-extensions</artifactId>
             <version>${jooq.version}</version>
         </dependency>
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
+        </dependency>
+
     </dependencies>
     <build>
         <plugins>
@@ -67,6 +73,11 @@
                         <artifactId>jooq-meta-extensions</artifactId>
                         <version>${jooq.version}</version>
                     </dependency>
+                    <dependency>
+                        <groupId>javax.persistence</groupId>
+                        <artifactId>javax.persistence-api</artifactId>
+                        <version>2.2</version>
+                    </dependency>
                 </dependencies>
 
                 <configuration>
@@ -77,6 +88,14 @@
                                 <property>
                                     <key>packages</key>
                                     <value>org.example.model</value>
+                                </property>
+                                <property>
+                                    <key>useAttributeConverters</key>
+                                    <value>true</value>
+                                </property>
+                                <property>
+                                    <key>unqualifiedSchema</key>
+                                    <value>none</value>
                                 </property>
                             </properties>
                             <includes>.*</includes>
